@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="H.O.T Flowers branding and logo design project by Chamod Dilshan.">
+  <title>H.O.T Flowers | Chamod Dilshan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    :root{--bg:#030917;--panel:#07162b;--blue:#087cff;--cyan:#22c7ff;--white:#f4f8ff;--muted:#91a6c7;--line:rgba(74,151,255,.19)}
+    body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--white);line-height:1.75;min-height:100vh}
+    body:before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at 15% 10%,#075cff20,transparent 40%),radial-gradient(ellipse at 90% 55%,#00baff12,transparent 35%)}
+    a{color:inherit;text-decoration:none}
+    .wrap{width:min(1000px,90%);margin:auto;padding:35px 0 75px}
+    .back{display:inline-flex;align-items:center;gap:10px;color:#86cfff;border:1px solid #21466f;background:#07162b;padding:10px 15px;border-radius:10px;font-size:14px;transition:.2s}
+    .back:hover{border-color:#22c7ff;transform:translateX(-3px)}
+    .kicker{margin-top:45px;color:#5edaff;font:700 11px 'Space Grotesk',sans-serif;letter-spacing:2.5px;text-transform:uppercase}
+    h1{font:700 clamp(38px,7vw,68px)/1.1 'Space Grotesk',sans-serif;letter-spacing:-2px;margin:12px 0 16px}
+    .gradient{background:linear-gradient(100deg,#f4f8ff,#5ecaff 48%,#1476ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .intro{font-size:clamp(16px,2vw,19px);color:#b3c6e2;max-width:760px}
+    .hero-image{position:relative;margin:32px 0 38px;min-height:280px;max-height:600px;border:1px solid #214a78;border-radius:20px;overflow:hidden;background:linear-gradient(135deg,#0b2341,#061126);display:grid;place-items:center}
+    .hero-image img{width:100%;max-height:600px;object-fit:contain;display:block;position:relative;z-index:1}
+    .image-placeholder{padding:50px 20px;text-align:center;color:#8db5e5}
+    .image-placeholder strong{display:block;font:700 clamp(28px,5vw,48px) 'Space Grotesk';color:#56caff;letter-spacing:-1px}
+    .image-placeholder span{font-size:12px;letter-spacing:2px}
+    .content-grid{display:grid;grid-template-columns:1.5fr .8fr;gap:35px}
+    h2{font:700 24px 'Space Grotesk';margin:0 0 12px}
+    .description{color:#a9bddb;font-size:16px;white-space:pre-line}
+    .sidebox{border:1px solid #1d416c;background:linear-gradient(145deg,#0a1e38,#061225);border-radius:16px;padding:22px;height:max-content}
+    .sidebox h2{font-size:17px}
+    .label{font-size:11px;letter-spacing:1.5px;color:#69cfff;margin-top:18px}
+    .value{color:#d8e7fb;font-size:14px;margin-top:4px}
+    .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+    .chips span{font-size:12px;padding:6px 10px;border:1px solid #24507e;border-radius:30px;color:#bfe4ff;background:#0a2341}
+    .note{margin-top:28px;padding:14px 16px;border-left:3px solid #22c7ff;background:#07172c;color:#89a9d0;font-size:13px}
+    .footer{border-top:1px solid var(--line);padding-top:20px;margin-top:50px;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;color:#7f9abe;font-size:13px}
+    @media(max-width:700px){.content-grid{grid-template-columns:1fr}.kicker{margin-top:35px}.hero-image{min-height:210px}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <a class="back" href="../index.html#projects">← Back to Portfolio</a>
+    <p class="kicker">Brand Identity · Graphic Design</p>
+    <h1>H.O.T <span class="gradient">Flowers</span></h1>
+    <p class="intro">A floral brand identity concept focused on creating a memorable, elegant visual style for a flower business.</p>
+    <div class="hero-image">
+      <div class="image-placeholder" id="imagePlaceholder">
+        <strong>H.O.T FLOWERS</strong>
+        <span>PROJECT IMAGE PREVIEW</span>
+      </div>
+      <img src="../assets/hot-flowers.jpg" alt="H.O.T Flowers design by Chamod Dilshan" onload="document.getElementById('imagePlaceholder').style.display='none'" onerror="this.style.display='none'">
+    </div>
+    <div class="content-grid">
+      <section>
+        <h2>About this project</h2>
+        <p class="description">Use this space to explain the design brief, the visual idea, your colour choices, and how the final identity supports the flower business. Replace this sample text with the details of your actual project.</p>
+        <div class="note">To show your real design here, add the image to the <b>assets</b> folder using the filename <b>hot-flowers.jpg</b>. You can also update the project description directly in this HTML file.</div>
+      </section>
+      <aside class="sidebox">
+        <h2>Project details</h2>
+        <div class="label">CATEGORY</div><p class="value">Logo Design · Brand Identity</p>
+        <div class="label">MY ROLE</div><p class="value">Graphic Designer</p>
+        <div class="label">TOOLS / SKILLS</div>
+        <div class="chips"><span>Logo Design</span><span>Branding</span><span>Photoshop</span><span>Illustrator</span></div>
+        <div class="label">PROJECT</div><p class="value">H.O.T Flowers</p>
+      </aside>
+    </div>
+    <footer class="footer"><span>© <span id="year"></span> Chamod Dilshan</span><a href="../index.html#projects">More projects ↗</a></footer>
+  </main>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
